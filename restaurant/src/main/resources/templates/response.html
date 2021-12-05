@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 - resource not found</title>
+</head>
+<body>
+
+
+public class Except {
+
+   public static void main(String args[]) {
+      try(FileReader fr = new FileReader("/index")) {
+         
+         fr.read();  
+        
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+   }
+}
+</body>
+</html>
